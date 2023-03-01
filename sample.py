@@ -17,6 +17,6 @@ government_phase = gnp.government_phase_extract(text2)
 print(government_phase)
 
 # 政府ニュースのチェック
-gnp.government_news_analysis("sample_input.json")
-with open("news_out.json") as f:
+gnp.government_news_analysis("data/sample_input.json")
+with open("data/news_out.json") as f:
     print(f.read())

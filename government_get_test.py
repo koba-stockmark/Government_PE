@@ -4,14 +4,14 @@ from government_news_analysis import GovernmentNewsAnalysis
 
 model = GovernmentNewsAnalysis() # KeywordExtractorのクラスのインスタンス化
 
-articles = json.load(open('nikkei.json'))
-articles2 = json.load(open('nikkei_5000.json'))
-solution2 = open('government_news.txt')
-solution = open('government_add.txt')
-solution3 = open('error_text.txt')
+articles = json.load(open('../PredicateStructuring/data/nikkei.json'))
+articles2 = json.load(open('../PredicateStructuring/data/nikkei_5000.json'))
+solution2 = open('data/government_news.txt')
+solution = open('data/government_add.txt')
+solution3 = open('data/error_text.txt')
 
-out_file2 = open('government_result.tsv', 'w')
-#out_file = open('government_add.tsv', 'w')
+out_file2 = open('data/government_result.tsv', 'w')
+#out_file = open('data/government_add.tsv', 'w')
 
 #"""
 for doc in solution2:

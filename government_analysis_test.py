@@ -3,14 +3,14 @@ from government_news_analysis import GovernmentNewsAnalysis
 
 gnp = GovernmentNewsAnalysis()
 
-input_file = "keisan_input.json"
-out_file = open('keisan_result.tsv', 'w')
+input_file = "data/keisan_input.json"
+out_file = open('data/keisan_result.tsv', 'w')
 
 # 政府ニュースのチェック
 gnp.government_news_analysis(input_file2)
 
 d = {}
-f = open("news_out.json", mode="r")
+f = open("data/news_out.json", mode="r")
 j_data = json.load(f)
 for d in j_data:
     print("%s\t%s\t%s\t%s\t%s\t%s\t%s\n" % (d["id"], d["soshiki"], d["busho"], d["title"], d["title_type"], d["head"].replace('\t', '\\t'), d["head_type"]))
