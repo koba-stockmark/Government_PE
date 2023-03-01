@@ -201,6 +201,6 @@ class GovernmentNewsAnalysis:
                 if self.debug:
                     print(" id = %s \n busho = %s \n title = %s \n title_type = %s \n text = %s \n text_type = %s \n" % (news_data["id"] , news_data["busho"], news_data["title"], news_data["title_type"], news_data["head"], news_data["head_type"]))
                 o_text = ""
-            json_file = open("news_out.json", mode="w")
+            json_file = open("data/news_out.json", mode="w")
             json.dump(out_data, json_file, indent=2, ensure_ascii=False)
             json_file.close()
